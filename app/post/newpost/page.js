@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>user page</div>
+    <div>add-new post</div>
   )
 }
 
