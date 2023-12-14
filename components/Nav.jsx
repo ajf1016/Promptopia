@@ -10,12 +10,12 @@ const Nav = () => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
   useEffect(() => {
-    const setProviders = async () => {
-      const response = await getProviders();
-      setProviders(response);
-    };
-
-    setProviders();
+    const fetchProviders = async () => {
+        const response = await getProviders();
+        setProviders(response); // Use the renamed state setter function
+      };
+  
+      fetchProviders(); 
   }, []);
 
   return (
