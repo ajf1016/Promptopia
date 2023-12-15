@@ -32,7 +32,7 @@ const Nav = () => {
       </Link>
 
       {/* Desktop nav */}
-      <div className="sm:flex-hidden">
+      <div className="sm:flex hidden">
         {isUserLoggedIn ? (
           <div className="flex gap-3 md:gap-5">
             <Link href="/create-prompt" className="black_btn">
